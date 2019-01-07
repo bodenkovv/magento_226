@@ -43,6 +43,11 @@ class Index extends \Magento\Backend\App\Action
             $resultPage->getLayout()->getBlock('formaskquestion')->setAskQuestionEnable($this->_helperData->getGeneralConfig('homework10_askquestion_enable'));
             $resultPage->getLayout()->getBlock('formaskquestion')->setAskQuestionTitle($this->_helperData->getGeneralConfig('homework10_askquestion_title'));
             $resultPage->getLayout()->getBlock('formaskquestion')->setAskQuestionText($this->_helperData->getGeneralConfig('homework10_askquestion_text'));
+
+            $resultPage->getLayout()->getBlock('bvv.ko.components')->setAskQuestionEnable($this->_helperData->getGeneralConfig('homework10_askquestion_enable'));
+            $resultPage->getLayout()->getBlock('bvv.ko.components')->setAskQuestionTitle($this->_helperData->getGeneralConfig('homework10_askquestion_title'));
+            $resultPage->getLayout()->getBlock('bvv.ko.components')->setAskQuestionText($this->_helperData->getGeneralConfig('homework10_askquestion_text'));
+
         } else
         {
             $resultPage->getConfig()->getTitle()->prepend((__('Module AskQuestion don`t active')));

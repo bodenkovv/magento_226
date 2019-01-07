@@ -8,6 +8,10 @@
                    name="formaskquestion"
                    template="BodenkoVV_HomeWork10::view.phtml"/>
 
+            <block class="Magento\Backend\Block\Template"
+                   name="bvv.ko.components"
+                   template="BodenkoVV_HomeWork10::bvvko-components.phtml" />
+
         </referenceContainer>
     </body>
 </page>
